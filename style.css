@@ -177,6 +177,7 @@ body .imgbox img {
 
 #trainers {
   padding: 40px 0;
+  /* Media queries */
 }
 #trainers h1 {
   font-weight: 700;
@@ -195,24 +196,24 @@ body .imgbox img {
 #trainers .box .textbox {
   padding: 15px;
 }
-#trainers .box h2 {
-  font-weight: 300px;
+#trainers .box .textbox h2 {
+  font-weight: 300;
   font-size: 25px;
   padding: 20px 0 0;
 }
-#trainers .box ul {
+#trainers .box .textbox ul {
   display: flex;
   flex-direction: row;
 }
-#trainers .box ul li {
-  margin: 0 10px;
+#trainers .box .textbox ul li {
+  margin-right: 20px;
   background-color: #d4cece;
   border-radius: 50%;
   padding: 20px;
   width: 10px;
   height: 10px;
 }
-#trainers .box ul li .icon {
+#trainers .box .textbox ul li .icon {
   margin: -7px;
 }
 #trainers .bigicon i {
@@ -220,8 +221,46 @@ body .imgbox img {
   color: #d4cece;
   font-size: 30px;
 }
-#trainers .wid {
-  width: 580px;
+@media (max-width: 1200px) {
+  #trainers .textbox {
+    padding: 10px;
+  }
+}
+@media (max-width: 992px) {
+  #trainers .textbox {
+    padding: 10px;
+  }
+  #trainers .textbox h2 {
+    padding: 0 !important;
+  }
+  #trainers .textbox h4 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #trainers .box {
+    margin-bottom: 20px;
+  }
+  #trainers .box .textbox {
+    text-align: center;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+  #trainers .box .textbox ul {
+    display: inline-flex !important;
+  }
+  #trainers .box .textbox ul li {
+    margin: 0 10px !important;
+  }
+  #trainers .box .imgbox {
+    height: 450px;
+    padding: 0 40px;
+  }
+  #trainers .box .imgbox img {
+    height: 100%;
+  }
 }
 
 #pricing {

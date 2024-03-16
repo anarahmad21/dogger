@@ -13,27 +13,55 @@
         margin: 0 5px
         .textbox
             padding: 15px
-        h2
-            font-weight: 300px
-            font-size: 25px
-            padding: 20px 0 0
-        ul
-            display: flex
-            flex-direction: row
-            li
-                margin: 0 10px
-                background-color: #d4cece
-                border-radius: 50%
-                padding: 20px
-                width: 10px
-                height: 10px
-                .icon
-                    margin: -7px
+            h2
+                font-weight: 300
+                font-size: 25px
+                padding: 20px 0 0
+            ul
+                display: flex
+                flex-direction: row
+                li
+                    margin-right: 20px
+                    background-color: #d4cece
+                    border-radius: 50%
+                    padding: 20px
+                    width: 10px
+                    height: 10px
+                    .icon
+                        margin: -7px
 
     .bigicon
         i
             margin: 0 0 10px 0
             color: #d4cece
             font-size: 30px
-    .wid
-        width: 580px
+
+    /* Media queries */
+    @media (max-width: 1200px)
+        .textbox
+            padding: 10px
+    @media (max-width: 992px)
+        .textbox
+            padding: 10px
+            h2
+                padding: 0!important
+            h4
+                font-size: 18px
+                line-height: 1.2
+                margin-top: 10px
+    @media (max-width: 768px)
+        .box
+            margin-bottom: 20px
+            .textbox
+                text-align: center
+                padding-left: 50px!important
+                padding-right: 50px!important
+                ul
+                    display: inline-flex!important
+                    li
+                        margin: 0 10px!important
+            .imgbox
+                height: 450px
+                padding: 0 40px
+                img
+                    height: 100%
