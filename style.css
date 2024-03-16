@@ -91,39 +91,40 @@ body .imgbox img {
 
 #aboutus {
   padding: 40px 0;
+  /* Media queries */
 }
-#aboutus .textbox {
+#aboutus .text {
   padding: 0 100px;
 }
-#aboutus .textbox h1 {
+#aboutus .text h1 {
   font-weight: 700;
   font-size: 35px;
 }
-#aboutus .textbox h3, #aboutus .textbox p {
+#aboutus .text h3, #aboutus .text p {
   color: #a8a8a8;
   font-weight: 100;
   font-size: 20px;
   margin: 20px 0 0;
   line-height: 1.6;
 }
-#aboutus .textbox p {
+#aboutus .text p {
   font-size: 18px;
   color: #949494;
   line-height: 1.4;
 }
-#aboutus .textbox li {
+#aboutus .text li {
   display: flex;
   padding: 20px 0 0 0;
 }
-#aboutus .textbox .icon {
+#aboutus .text li .icon {
   padding: 0 15px 0 0;
   color: #5e5656;
 }
-#aboutus .textbox h4 {
+#aboutus .text li h4 {
   font-size: 20px;
   color: #949494;
 }
-#aboutus .textbox .bigicon i {
+#aboutus .text .bigicon i {
   margin: 0 0 10px 0;
   padding: 0 50px;
   color: #d4cece;
@@ -131,6 +132,47 @@ body .imgbox img {
 }
 #aboutus .imgbox {
   width: 450px;
+}
+@media (max-width: 1199px) {
+  #aboutus .text {
+    padding: 0 35px;
+  }
+}
+@media (max-width: 992px) {
+  #aboutus .text {
+    padding: 0 30px;
+  }
+  #aboutus .text h1 {
+    font-size: 30px;
+  }
+  #aboutus .text h3 {
+    margin: 10px 0 0;
+    line-height: 1.3;
+    font-size: 18px;
+  }
+  #aboutus .text p {
+    margin: 10px 0 0;
+    line-height: 1.1;
+    font-size: 16px;
+  }
+  #aboutus .text li h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #aboutus .text {
+    padding: 0 20px;
+    text-align: center !important;
+  }
+  #aboutus .text ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  #aboutus .img {
+    padding: 0 40px;
+  }
 }
 
 #trainers {

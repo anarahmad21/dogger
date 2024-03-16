@@ -1,6 +1,6 @@
 #aboutus
     padding: 40px 0
-    .textbox
+    .text
         padding: 0 100px
         h1
             font-weight: 700
@@ -18,12 +18,12 @@
         li
             display: flex
             padding: 20px 0 0 0
-        .icon
-            padding: 0 15px 0 0
-            color: #5e5656
-        h4
-            font-size: 20px
-            color: #949494
+            .icon
+                padding: 0 15px 0 0
+                color: #5e5656
+            h4
+                font-size: 20px
+                color: #949494
         .bigicon
             i
                 margin: 0 0 10px 0
@@ -32,3 +32,34 @@
                 font-size: 30px
     .imgbox
         width: 450px
+
+    /* Media queries */
+    @media (max-width: 1199px)
+        .text
+            padding: 0 35px
+    @media (max-width: 992px)
+        .text
+            padding: 0 30px
+            h1
+                font-size: 30px
+            h3
+                margin: 10px 0 0
+                line-height: 1.3
+                font-size: 18px
+            p
+                margin: 10px 0 0
+                line-height: 1.1
+                font-size: 16px
+            li
+                h4
+                    font-size: 18px
+    @media (max-width: 768px)
+        .text
+            padding: 0 20px
+            text-align: center!important
+            ul
+                padding-left: 20px
+                margin-bottom: 20px
+    @media (max-width: 576px)
+        .img
+            padding: 0 40px
