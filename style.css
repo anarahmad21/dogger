@@ -1,13 +1,344 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
-
-a {
-  color: orange;
+body .imgbox img {
+  width: 100%;
 }
 
-a:hover {
-  color: black;
+#wecare {
+  padding: 50px 0;
+  /* Media queries */
 }
-/*# sourceMappingURL=style.css.map */
+#wecare h1 {
+  font-weight: 700;
+  font-size: 72px;
+}
+#wecare h4 {
+  color: #a8a8a8;
+  font-size: 24px;
+}
+#wecare .imgbox {
+  width: 500px;
+}
+@media (max-width: 992px) {
+  #wecare h1 {
+    font-size: 60px;
+  }
+}
+
+#welcome {
+  padding: 40px 0;
+}
+#welcome .textbox {
+  padding: 80px;
+}
+#welcome .textbox h1 {
+  font-weight: 700;
+  font-size: 30px;
+}
+#welcome .textbox h3 {
+  color: #868686;
+  margin: 20px 0 40px;
+  font-size: 20px;
+}
+#welcome .textbox h2, #welcome .textbox h6 {
+  margin: 15px 0;
+}
+#welcome .textbox h2 {
+  font-size: 33px;
+}
+#welcome .textbox h6 {
+  font-size: 18px;
+}
+#welcome .textbox .btn {
+  padding: 10px 30px;
+  border-radius: 20px;
+  background-color: #a7b59f;
+  color: white;
+}
+#welcome .wid {
+  width: 580px;
+  padding: 0;
+}
+#welcome .bigicon i {
+  margin: 0 0 10px 0;
+  color: #d4cece;
+  font-size: 30px;
+}
+
+#aboutus {
+  padding: 40px 0;
+}
+#aboutus .textbox {
+  padding: 0 100px;
+}
+#aboutus .textbox h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#aboutus .textbox h3, #aboutus .textbox p {
+  color: #a8a8a8;
+  font-weight: 100;
+  font-size: 20px;
+  margin: 20px 0 0;
+  line-height: 1.6;
+}
+#aboutus .textbox p {
+  font-size: 18px;
+  color: #949494;
+  line-height: 1.4;
+}
+#aboutus .textbox li {
+  display: flex;
+  padding: 20px 0 0 0;
+}
+#aboutus .textbox .icon {
+  padding: 0 15px 0 0;
+  color: #5e5656;
+}
+#aboutus .textbox h4 {
+  font-size: 20px;
+  color: #949494;
+}
+#aboutus .textbox .bigicon i {
+  margin: 0 0 10px 0;
+  padding: 0 50px;
+  color: #d4cece;
+  font-size: 30px;
+}
+#aboutus .imgbox {
+  width: 450px;
+}
+
+#trainers {
+  padding: 40px 0;
+}
+#trainers h1 {
+  font-weight: 700;
+  font-size: 38px;
+}
+#trainers h3, #trainers h4 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #a8a8a8;
+  margin: 20px 0;
+  line-height: 1.4;
+}
+#trainers .box {
+  margin: 0 5px;
+}
+#trainers .box .textbox {
+  padding: 15px;
+}
+#trainers .box h2 {
+  font-weight: 300px;
+  font-size: 25px;
+  padding: 20px 0 0;
+}
+#trainers .box ul {
+  display: flex;
+  flex-direction: row;
+}
+#trainers .box ul li {
+  margin: 0 10px;
+  background-color: #d4cece;
+  border-radius: 50%;
+  padding: 20px;
+  width: 10px;
+  height: 10px;
+}
+#trainers .box ul li .icon {
+  margin: -7px;
+}
+#trainers .bigicon i {
+  margin: 0 0 10px 0;
+  color: #d4cece;
+  font-size: 30px;
+}
+#trainers .wid {
+  width: 580px;
+}
+
+#pricing {
+  padding: 40px 0;
+}
+#pricing .textbox {
+  width: 580px;
+  text-align: center;
+}
+#pricing .textbox h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#pricing .textbox h5 {
+  font-weight: 200;
+  font-size: 20px;
+  color: #000000;
+  margin: 20px 0 50px;
+}
+#pricing .box {
+  width: 340px;
+  color: white;
+  background-color: #708f97;
+  padding: 50px 30px;
+  text-align: center;
+}
+#pricing .box h2 {
+  font-size: 25px;
+}
+#pricing .box h3 {
+  font-size: 30px;
+  margin: 20px 0 0;
+}
+#pricing .box li {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 0;
+}
+#pricing .box li h4 {
+  font-size: 18px;
+  margin: 0 0 0 10px;
+}
+#pricing .box .btn {
+  padding: 10px 35px;
+  margin: 30px 0 0;
+  border-radius: 30px;
+  background-color: #2b383c;
+  color: white;
+}
+#pricing .PREMIUM-color {
+  background-color: #2b383c;
+}
+#pricing .PREMIUM-color .btn {
+  background-color: #708f97;
+}
+#pricing .bigicon i {
+  margin: 0 0 10px 0;
+  color: #d4cece;
+  font-size: 30px;
+}
+
+#faq {
+  padding: 40px 0;
+}
+#faq .wid {
+  width: 580px;
+}
+#faq h1 {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 15px 0;
+}
+#faq h3 {
+  font-size: 20px;
+  margin: 0 0 40px;
+  line-height: 1.4;
+}
+#faq .textbox {
+  padding: 0 70px;
+}
+#faq .textbox h2, #faq .textbox h4 {
+  font-size: 25px;
+  margin: 0 0 0 10px;
+  color: #717171;
+}
+#faq .textbox .minibox {
+  margin: 20px 0 0 0;
+}
+#faq .textbox .minibox h2 {
+  margin: 0 0 0 10px;
+}
+#faq .textbox p {
+  font-size: 20px;
+  margin: 30px 0 0 32px;
+  color: #949494;
+}
+#faq .textbox li {
+  margin: 30px 0 0;
+  display: flex;
+}
+#faq .icon {
+  color: #d4cece;
+}
+#faq .icon i {
+  font-size: 22px;
+}
+#faq .bigicon i {
+  font-size: 30px;
+}
+
+#doggerblog {
+  padding: 40px 0;
+}
+#doggerblog .box {
+  display: flex;
+}
+#doggerblog h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#doggerblog h3 {
+  font-size: 20px;
+  margin: 30px 0 60px;
+}
+#doggerblog .textbox {
+  margin: 0 0 0 20px;
+}
+#doggerblog .textbox h2 {
+  font-size: 22px;
+}
+#doggerblog .textbox h4 {
+  font-size: 18px;
+  color: #aba8a8;
+}
+#doggerblog .textbox p {
+  font-size: 18px;
+  color: #8f8686;
+}
+#doggerblog .textbox p, #doggerblog .textbox h4 {
+  margin: 20px 0 0;
+}
+#doggerblog .wid {
+  width: 580px;
+}
+#doggerblog .bigicon i {
+  margin: 0 0 10px 0;
+  color: #d4cece;
+  font-size: 30px;
+}
+
+#ourservices {
+  padding: 40px 0;
+}
+#ourservices .wid {
+  width: 580px;
+}
+#ourservices h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#ourservices h3 {
+  font-size: 20px;
+  color: #c6c6c6;
+  margin: 30px 0;
+}
+#ourservices .textbox {
+  padding: 30px 40px;
+}
+#ourservices .textbox h2 {
+  font-size: 25px;
+  color: #757575;
+  margin: 20px 0 0;
+}
+#ourservices .textbox h3 {
+  margin: 30px 0 0;
+}
+#ourservices .textbox .icon {
+  font-size: 60px;
+}
+#ourservices .bigicon i {
+  margin: 0 0 10px 0;
+  color: #d4cece;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */
