@@ -29,42 +29,64 @@ body .imgbox img {
 
 #welcome {
   padding: 40px 0;
+  /* Media queries */
 }
-#welcome .textbox {
-  padding: 80px;
-}
-#welcome .textbox h1 {
+#welcome h1 {
   font-weight: 700;
   font-size: 30px;
 }
-#welcome .textbox h3 {
+#welcome h3 {
   color: #868686;
   margin: 20px 0 40px;
   font-size: 20px;
 }
-#welcome .textbox h2, #welcome .textbox h6 {
+#welcome .text {
+  padding: 0 80px;
+}
+#welcome .text h2, #welcome .text h6 {
   margin: 15px 0;
 }
-#welcome .textbox h2 {
+#welcome .text h2 {
   font-size: 33px;
 }
-#welcome .textbox h6 {
+#welcome .text h6 {
   font-size: 18px;
 }
-#welcome .textbox .btn {
+#welcome .text .btn {
   padding: 10px 30px;
   border-radius: 20px;
   background-color: #a7b59f;
   color: white;
 }
-#welcome .wid {
-  width: 580px;
-  padding: 0;
-}
 #welcome .bigicon i {
   margin: 0 0 10px 0;
   color: #d4cece;
   font-size: 30px;
+}
+@media (max-width: 992px) {
+  #welcome .text {
+    padding: 0 50px;
+  }
+  #welcome .text h2, #welcome .text h6 {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  #welcome .text h2 {
+    font-size: 30px;
+  }
+  #welcome .text h6 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  #welcome .reverse {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 576px) {
+  #welcome .img {
+    padding: 0 40px;
+  }
 }
 
 #aboutus {
