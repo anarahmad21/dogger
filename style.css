@@ -261,7 +261,6 @@ body .imgbox img {
 }
 #pricing {
   padding: 40px 0;
-  /* Media queries */
 }
 #pricing h1 {
   font-weight: 700;
@@ -314,8 +313,11 @@ body .imgbox img {
   color: #d4cece;
   font-size: 30px;
 }
+
+/* Media queries */
 @media (max-width: 992px) {
   #pricing .box {
+    margin-bottom: 20px;
     padding: 40px 25px;
   }
   #pricing .box h2 {
@@ -333,24 +335,12 @@ body .imgbox img {
     margin-left: 4px;
   }
 }
-@media (max-width: 767px) {
-  #pricing .pricing {
-    flex-flow: row wrap;
-  }
-  #pricing .pricing .box {
-    margin-bottom: 20px;
-  }
-}
 @media (max-width: 576px) {
-  #pricing .pricing {
-    padding: 0 40px;
-  }
-  #pricing .pricing .box {
+  #pricing .box {
     width: 300px;
     padding: 30px 40px;
   }
 }
-
 #faq {
   padding: 40px 0;
   /* Media queries */

@@ -43,9 +43,11 @@
             color: #d4cece
             font-size: 30px
 
-    /* Media queries */
-    @media (max-width: 992px)
+/* Media queries */
+@media (max-width: 992px)
+    #pricing
         .box
+            margin-bottom: 20px
             padding: 40px 25px
             h2
                 font-size: 22px
@@ -57,14 +59,8 @@
                 h4
                     font-size: 16px
                     margin-left: 4px
-    @media (max-width: 767px)
-        .pricing
-            flex-flow: row wrap
-            .box
-                margin-bottom: 20px
-    @media (max-width: 576px)
-        .pricing
-            padding: 0 40px
-            .box
-                width: 300px
-                padding: 30px 40px
+@media (max-width: 576px)
+    #pricing
+        .box
+            width: 300px
+            padding: 30px 40px
