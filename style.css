@@ -173,7 +173,6 @@ body .imgbox img {
 }
 #trainers {
   padding: 40px 0;
-  /* Media queries */
 }
 #trainers h1 {
   font-weight: 700;
@@ -217,6 +216,8 @@ body .imgbox img {
   color: #d4cece;
   font-size: 30px;
 }
+
+/* Media queries */
 @media (max-width: 1200px) {
   #trainers .textbox {
     padding: 10px;
@@ -258,7 +259,6 @@ body .imgbox img {
     height: 100%;
   }
 }
-
 #pricing {
   padding: 40px 0;
   /* Media queries */
