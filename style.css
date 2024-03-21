@@ -8,7 +8,6 @@ body .imgbox img {
 
 #wecare {
   padding: 50px 0;
-  /* Media queries */
 }
 #wecare h1 {
   font-weight: 700;
@@ -21,15 +20,15 @@ body .imgbox img {
 #wecare .imgbox {
   width: 500px;
 }
+
+/* Media queries */
 @media (max-width: 992px) {
   #wecare h1 {
     font-size: 60px;
   }
 }
-
 #welcome {
   padding: 40px 0;
-  /* Media queries */
 }
 #welcome h1 {
   font-weight: 700;
@@ -40,19 +39,19 @@ body .imgbox img {
   margin: 20px 0 40px;
   font-size: 20px;
 }
-#welcome .text {
+#welcome .textbox {
   padding: 0 80px;
 }
-#welcome .text h2, #welcome .text h6 {
+#welcome .textbox h2, #welcome .textbox h6 {
   margin: 15px 0;
 }
-#welcome .text h2 {
+#welcome .textbox h2 {
   font-size: 33px;
 }
-#welcome .text h6 {
+#welcome .textbox h6 {
   font-size: 18px;
 }
-#welcome .text .btn {
+#welcome .textbox .btn {
   padding: 10px 30px;
   border-radius: 20px;
   background-color: #a7b59f;
@@ -63,68 +62,58 @@ body .imgbox img {
   color: #d4cece;
   font-size: 30px;
 }
+
+/* Media queries */
 @media (max-width: 992px) {
-  #welcome .text {
+  #welcome .textbox {
     padding: 0 50px;
   }
-  #welcome .text h2, #welcome .text h6 {
+  #welcome .textbox h2, #welcome .textbox h6 {
     margin: auto;
     margin-bottom: 10px;
   }
-  #welcome .text h2 {
+  #welcome .textbox h2 {
     font-size: 30px;
   }
-  #welcome .text h6 {
+  #welcome .textbox h6 {
     font-size: 16px;
   }
 }
-@media (max-width: 767px) {
-  #welcome .reverse {
-    flex-direction: column-reverse;
-  }
-}
-@media (max-width: 576px) {
-  #welcome .img {
-    padding: 0 40px;
-  }
-}
-
 #aboutus {
   padding: 40px 0;
-  /* Media queries */
 }
-#aboutus .text {
+#aboutus .textbox {
   padding: 0 100px;
 }
-#aboutus .text h1 {
+#aboutus .textbox h1 {
   font-weight: 700;
   font-size: 35px;
 }
-#aboutus .text h3, #aboutus .text p {
+#aboutus .textbox h3, #aboutus .textbox p {
   color: #a8a8a8;
   font-weight: 100;
   font-size: 20px;
   margin: 20px 0 0;
   line-height: 1.6;
 }
-#aboutus .text p {
+#aboutus .textbox p {
   font-size: 18px;
   color: #949494;
   line-height: 1.4;
 }
-#aboutus .text li {
+#aboutus .textbox li {
   display: flex;
   padding: 20px 0 0 0;
 }
-#aboutus .text li .icon {
+#aboutus .textbox li .icon {
   padding: 0 15px 0 0;
   color: #5e5656;
 }
-#aboutus .text li h4 {
+#aboutus .textbox li h4 {
   font-size: 20px;
   color: #949494;
 }
-#aboutus .text .bigicon i {
+#aboutus .textbox .bigicon i {
   margin: 0 0 10px 0;
   padding: 0 50px;
   color: #d4cece;
@@ -133,38 +122,40 @@ body .imgbox img {
 #aboutus .imgbox {
   width: 450px;
 }
+
+/* Media queries */
 @media (max-width: 1199px) {
-  #aboutus .text {
+  #aboutus .textbox {
     padding: 0 35px;
   }
 }
 @media (max-width: 992px) {
-  #aboutus .text {
+  #aboutus .textbox {
     padding: 0 30px;
   }
-  #aboutus .text h1 {
+  #aboutus .textbox h1 {
     font-size: 30px;
   }
-  #aboutus .text h3 {
+  #aboutus .textbox h3 {
     margin: 10px 0 0;
     line-height: 1.3;
     font-size: 18px;
   }
-  #aboutus .text p {
+  #aboutus .textbox p {
     margin: 10px 0 0;
     line-height: 1.1;
     font-size: 16px;
   }
-  #aboutus .text li h4 {
+  #aboutus .textbox li h4 {
     font-size: 18px;
   }
 }
 @media (max-width: 768px) {
-  #aboutus .text {
+  #aboutus .textbox {
     padding: 0 30px;
     text-align: center !important;
   }
-  #aboutus .text ul {
+  #aboutus .textbox ul {
     padding-left: 20px;
     margin-bottom: 20px;
   }
@@ -173,14 +164,13 @@ body .imgbox img {
   }
 }
 @media (max-width: 576px) {
-  #aboutus .text {
+  #aboutus .textbox {
     padding: 0 20px;
   }
   #aboutus .img {
     padding: 0 40px;
   }
 }
-
 #trainers {
   padding: 40px 0;
   /* Media queries */
@@ -248,6 +238,7 @@ body .imgbox img {
 @media (max-width: 767px) {
   #trainers .box {
     margin-bottom: 20px;
+    padding: 0 30px;
   }
   #trainers .box .textbox {
     text-align: center;
@@ -262,7 +253,6 @@ body .imgbox img {
   }
   #trainers .box .imgbox {
     height: 450px;
-    padding: 0 40px;
   }
   #trainers .box .imgbox img {
     height: 100%;
