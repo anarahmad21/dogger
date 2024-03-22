@@ -346,6 +346,7 @@ body .imgbox img {
 
 #pricing {
   padding: 40px 0;
+  /* Media queries */
 }
 #pricing h1 {
   font-weight: 700;
@@ -357,40 +358,40 @@ body .imgbox img {
   color: #000000;
   margin: 20px 0 50px;
 }
-#pricing .box {
+#pricing .box .minibox {
   width: 340px;
   color: white;
   background-color: #708f97;
   padding: 50px 30px;
   text-align: center;
 }
-#pricing .box h2 {
+#pricing .box .minibox h2 {
   font-size: 25px;
 }
-#pricing .box h3 {
+#pricing .box .minibox h3 {
   font-size: 30px;
   margin: 20px 0 0;
 }
-#pricing .box li {
+#pricing .box .minibox li {
   display: flex;
   margin: 25px 0 0;
   text-align: left;
 }
-#pricing .box li h4 {
+#pricing .box .minibox li h4 {
   font-size: 18px;
   margin: 0 0 0 10px;
 }
-#pricing .box .btn {
+#pricing .box .minibox .btn {
   padding: 10px 35px;
   margin: 30px 0 0;
   border-radius: 30px;
   background-color: #2b383c;
   color: white;
 }
-#pricing .PREMIUM-color {
+#pricing .box .PREMIUM-color {
   background-color: #2b383c;
 }
-#pricing .PREMIUM-color .btn {
+#pricing .box .PREMIUM-color .btn {
   background-color: #708f97;
 }
 #pricing .bigicon i {
@@ -398,34 +399,36 @@ body .imgbox img {
   color: #d4cece;
   font-size: 30px;
 }
-
-/* Media queries */
 @media (max-width: 992px) {
   #pricing .box {
+    flex-wrap: wrap;
+  }
+  #pricing .box .minibox {
     margin-bottom: 20px;
     padding: 40px 25px;
   }
-  #pricing .box h2 {
+  #pricing .box .minibox h2 {
     font-size: 22px;
   }
-  #pricing .box h3 {
+  #pricing .box .minibox h3 {
     font-size: 27px;
     margin-top: 15px;
   }
-  #pricing .box li {
+  #pricing .box .minibox li {
     margin: 15px 0 0;
   }
-  #pricing .box li h4 {
+  #pricing .box .minibox li h4 {
     font-size: 16px;
     margin-left: 4px;
   }
 }
 @media (max-width: 576px) {
-  #pricing .box {
+  #pricing .box .minibox {
     width: 300px;
     padding: 30px 40px;
   }
 }
+
 #faq {
   padding: 40px 0;
   /* Media queries */
