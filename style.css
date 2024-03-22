@@ -569,7 +569,6 @@ body .imgbox img {
 }
 @media (max-width: 1199px) {
   #doggerblog .box .textbox {
-    padding-right: 70px;
     padding-left: 40px;
   }
   #doggerblog .box .imgbox {
@@ -598,9 +597,7 @@ body .imgbox img {
 
 #ourservices {
   padding: 40px 0;
-}
-#ourservices .wid {
-  width: 580px;
+  /* Media queries */
 }
 #ourservices h1 {
   font-weight: 700;
@@ -620,7 +617,7 @@ body .imgbox img {
   margin: 20px 0 0;
 }
 #ourservices .textbox h3 {
-  margin: 30px 0 0;
+  margin: 30px 0;
 }
 #ourservices .textbox .icon {
   font-size: 60px;
@@ -629,4 +626,10 @@ body .imgbox img {
   margin: 0 0 10px 0;
   color: #d4cece;
   font-size: 30px;
+}
+@media (max-width: 767px) {
+  #ourservices .textbox {
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 }/*# sourceMappingURL=style.css.map */
