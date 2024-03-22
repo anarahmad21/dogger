@@ -1,30 +1,70 @@
 #doggerblog
     padding: 40px 0
-    .box
-        display: flex
     h1
         font-weight: 700
         font-size: 35px
     h3
         font-size: 20px
         margin: 30px 0 60px
-    .textbox
-        margin: 0 0 0 20px
-        h2
-            font-size: 22px
-        h4
-            font-size: 18px
-            color: #aba8a8
-        p
-            font-size: 18px
-            color: #8f8686
-        p,h4
-            margin: 20px 0 0
-    .wid
-        width: 580px
+    .box
+        display: flex
+        .textbox
+            margin: 0 0 0 20px
+            h2
+                font-size: 22px
+            h4
+                color: #aba8a8
+            p
+                color: #8f8686
+            p,h4
+                margin: 20px 0 0
+                font-size: 18px
+        .imgbox
+            width: 280px
 
     .bigicon
         i
             margin: 0 0 10px 0
             color: #d4cece
             font-size: 30px
+
+    /* Media queries */
+    @media (max-width: 1399px)
+        h3
+            margin-bottom: 40px
+        .box
+            flex-direction: column
+            .textbox
+                padding-right: 70px
+                padding-left: 60px
+                margin-top: 20px
+                h4,p
+                    margin-top: 10px
+            .imgbox
+                width: 400px
+                margin: auto
+
+    @media (max-width: 1199px)
+        .box
+            .textbox
+                padding-right: 70px
+                padding-left: 40px
+            .imgbox
+                width: 350px
+
+    @media (max-width: 991px)
+        .box
+            .textbox
+                padding-right: 30px
+                padding-left: 5px
+            .imgbox
+                width: 300px
+
+    @media (max-width: 767px)
+        .box
+            .textbox
+                padding-right: 120px
+                padding-left: 65px
+                margin-bottom: 20px
+            .imgbox
+                width: 350px
