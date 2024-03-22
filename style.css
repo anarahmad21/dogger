@@ -8,39 +8,71 @@ body .imgbox img {
 
 #wecare {
   padding: 50px 0;
+  /* Media queries */
 }
-#wecare h1 {
+#wecare .textbox {
+  text-align: left;
+  padding: 0 48px;
+}
+#wecare .textbox h1 {
   font-weight: 700;
   font-size: 72px;
 }
-#wecare h4 {
+#wecare .textbox h4 {
   color: #a8a8a8;
   font-size: 24px;
 }
 #wecare .imgbox {
   width: 500px;
 }
-
-/* Media queries */
 @media (max-width: 992px) {
-  #wecare h1 {
+  #wecare .textbox {
+    padding: 0 25px;
+  }
+  #wecare .textbox h1 {
     font-size: 60px;
   }
 }
+@media (max-width: 767px) {
+  #wecare .textbox {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 576px) {
+  #wecare .textbox h1 {
+    font-size: 50px;
+  }
+  #wecare .imgbox {
+    padding: 0 20px;
+  }
+}
+
 #welcome {
   padding: 40px 0;
+  /* Media queries */
 }
-#welcome h1 {
+#welcome .heading {
+  padding: 0 24px;
+}
+#welcome .heading h1 {
   font-weight: 700;
   font-size: 30px;
 }
-#welcome h3 {
+#welcome .heading h3 {
   color: #868686;
   margin: 20px 0 40px;
   font-size: 20px;
 }
+#welcome .start {
+  text-align: left;
+}
+#welcome .end {
+  text-align: right;
+}
 #welcome .textbox {
   padding: 0 80px;
+  margin: auto;
 }
 #welcome .textbox h2, #welcome .textbox h6 {
   margin: 15px 0;
@@ -57,16 +89,18 @@ body .imgbox img {
   background-color: #a7b59f;
   color: white;
 }
+#welcome .imgbox {
+  margin-bottom: 16px;
+}
 #welcome .bigicon i {
   margin: 0 0 10px 0;
   color: #d4cece;
   font-size: 30px;
 }
-
-/* Media queries */
 @media (max-width: 992px) {
   #welcome .textbox {
     padding: 0 50px;
+    margin: 0;
   }
   #welcome .textbox h2, #welcome .textbox h6 {
     margin: auto;
@@ -79,6 +113,33 @@ body .imgbox img {
     font-size: 16px;
   }
 }
+@media (max-width: 767px) {
+  #welcome .textbox {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #welcome .textbox h2 {
+    margin-top: 5px;
+  }
+  #welcome .imgbox {
+    margin-bottom: 0;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 576px) {
+  #welcome .textbox h2 {
+    font-size: 25px;
+  }
+  #welcome .textbox .btn {
+    padding: 5px 20px;
+    background-color: #a7b59f;
+    color: white;
+  }
+  #welcome .textbox .btn h5 {
+    font-size: 14px;
+  }
+}
+
 #aboutus {
   padding: 40px 0;
 }

@@ -1,14 +1,21 @@
 #welcome
     padding: 40px 0
-    h1
-        font-weight: 700
-        font-size: 30px
-    h3
-        color: #868686
-        margin: 20px 0 40px
-        font-size: 20px
+    .heading
+        padding: 0 24px
+        h1
+            font-weight: 700
+            font-size: 30px
+        h3
+            color: #868686
+            margin: 20px 0 40px
+            font-size: 20px
+    .start
+        text-align: left
+    .end
+        text-align: right
     .textbox
         padding: 0 80px
+        margin: auto
         h2,h6
             margin: 15px 0
         h2
@@ -20,17 +27,19 @@
             border-radius: 20px
             background-color: #a7b59f
             color: #ffff
+    .imgbox
+        margin-bottom: 16px
     .bigicon
         i
             margin: 0 0 10px 0
             color: #d4cece
             font-size: 30px
 
-/* Media queries */
-@media (max-width: 992px)
-    #welcome
+    /* Media queries */
+    @media (max-width: 992px)
         .textbox
             padding: 0 50px
+            margin: 0
             h2,h6
                 margin: auto
                 margin-bottom: 10px
@@ -38,3 +47,24 @@
                 font-size: 30px
             h6
                 font-size: 16px
+
+    @media (max-width: 767px)
+        .textbox
+            margin-bottom: 20px
+            text-align: center
+            h2
+                margin-top: 5px
+        .imgbox
+            margin-bottom: 0
+            padding: 0 40px
+
+    @media (max-width: 576px)
+        .textbox
+            h2
+                font-size: 25px
+            .btn
+                padding: 5px 20px
+                background-color: #a7b59f
+                color: #ffff
+                h5
+                    font-size: 14px
